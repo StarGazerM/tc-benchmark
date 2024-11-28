@@ -1,0 +1,12 @@
+[package]
+name = "datalog_benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dbsp = "*"
+ascent = "*"
+
+[features]
+par = ["ascent/par"]
+default = ["par"]
